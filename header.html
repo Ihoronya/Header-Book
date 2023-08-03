@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-container container">
+            <nav class="header-nav">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="header.html">
+                            <img src="images/logo_light.svg" alt="Logo" id="logo">
+                        </a>
+                    </div>
+                <ul class="header-list">
+                    <li><a href="header.html">Home</a></li>
+                    <li><a href="shopping_list.html" class="shoping-list">Shopping list</a></li>
+                </ul>
+            </nav>
+            <div class="switch-button">
+            <div class="theme-switcher">
+                <label id="theme-toggle" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+<button class="header-btn-mobil-menu" data-menu-open>
+    <svg class="header-btn-menu-svg" width="28" height="28">
+        <use href="./images/align-left.svg"></use>
+    </svg>
+</button>
+</div>
+</div>
+<div class="mobile-menu is-hidden" data-menu>
+    <div class="menu-container container">
+        <div class="logo">
+            <a href="header.html">
+                <img src="images/logo_light.svg" alt="Logo">
+            </a>
+        </div>
+        <div class="theme-switcher">
+                <label id="theme-toggle" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+<button class="header-btn-mobil-menu" data-menu-close>
+    <svg class="header-btn-menu-svg" width="24" height="24">
+        <use href="./images/x-close"></use>
+    </svg>
+</button>
+        <div class="menu-container-list">
+            <ul class="menu-list">
+                    <li><a href="header.html">Home</a></li>
+                    <li><a href="shopping_list.html" class="shoping-list">Shopping list</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    </header>
+    <script src="header.js"></script>
+    
+</body>
+</html>
