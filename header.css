@@ -359,12 +359,30 @@ body.dark-theme {
         width: 184px;
         height: 48px;
         border-radius: 18px;
+        border: solid 2px #111111;
         justify-content: start;
         align-items: center;
         padding: 14px;
         color: #FFFFFF;
         background-color: #4F2EE8;
+        position: relative;
     }
+
+    .sign-up-btn::after {
+    /* Use the arrow-narrow-right SVG as a background image */
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/arrow-narrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 12px; /* Adjust the positioning of the arrow as needed */
+    /* You can also adjust top/bottom properties if you want to change the vertical position of the arrow */
+    top: 50%; /* Centers the arrow vertically inside the button */
+    transform: translateY(-50%); /* Centers the arrow vertically */
+}
 
     .theme-switcher {
         margin-right: 24px;
