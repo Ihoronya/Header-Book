@@ -394,7 +394,6 @@ body.dark-theme {
     }
 
     .sign-up-btn::after {
-    /* Use the arrow-narrow-right SVG as a background image */
     content: "";
     display: block;
     width: 20px;
@@ -403,10 +402,9 @@ body.dark-theme {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: 12px; /* Adjust the positioning of the arrow as needed */
-    /* You can also adjust top/bottom properties if you want to change the vertical position of the arrow */
-    top: 50%; /* Centers the arrow vertically inside the button */
-    transform: translateY(-50%); /* Centers the arrow vertically */
+    right: 12px;    
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
     .theme-switcher {
