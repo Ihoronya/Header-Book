@@ -164,11 +164,36 @@ nav li {
     padding: 0;
     line-height: 0;
     border: transparent;
-    transition: fill 0.3s;
+    transition: 0.2s;
+}
+
+.header-btn-mobil-menu-close {
+    background-image: url(./images/x-close.svg);
+    
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: transparent;
+    transition: 0.2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header-btns-container {
+    position: relative;
+    width: 28px;
+    height: 28px;
 }
 
 .dark-theme .header-btn-mobil-menu {
     background-image: url(./images/align-left-dark.svg);
+}
+
+.dark-theme .header-btn-mobil-menu-close {
+    background-image: url(./images/x-close-white.svg);
 }
 
 .header-btn-mobil-menu:hover {

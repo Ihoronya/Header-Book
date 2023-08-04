@@ -65,11 +65,19 @@ function toggleTheme() {
     el.addEventListener('click', toggleMenu);
   });
 
-
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
+    refs.openMenuBtn.forEach((el) => el.classList.toggle('is-hidden'));
+    refs.closeMenuBtn.classList.toggle('is-hidden');
   }
 })();
+
+
+
+
+
+
 
 
