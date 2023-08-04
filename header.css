@@ -29,6 +29,7 @@ a {
     border: 2px solid var(--header-border-color-light);    
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
+    transition: 0.4s;
     
 }
 
@@ -46,6 +47,7 @@ a {
 
 .switch-button{
     display: flex;
+    align-items: center;
 }
 
 .header-nav {
@@ -57,18 +59,6 @@ a {
 .header-list {
     display: none;
 }
-
-.header-btn-mobil-menu {
-    padding: 0;
-    line-height: 0;
-    transition: .3s;
-    stroke: #111111;
-    border: transparent;
-    outline: none;
-    position: relative;
-    cursor: pointer;
-}
-
 
 
 .logo img {
@@ -99,8 +89,7 @@ nav li {
 
 .shoping-list::after {
     margin-left: 4px;
-    content: url(/images/cart.svg);
-    align-items: center;
+    content: url(./images/cart.svg);
     width: 20px;
     height: 20px;
 }
@@ -114,6 +103,7 @@ nav li {
     background: radial-gradient(circle at top, #4F2EE8 12%, #FFFFFF 150%);
     opacity: 1;
     margin: -2px;
+    transition: 0.3s;
 
 }
 
@@ -157,14 +147,20 @@ nav li {
 }
 
 .header-btn-mobil-menu {
+    display: flex;
     background-color: transparent;
     background-image: url(./images/align-left.svg);
     stroke: #111111;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     padding: 0;
     line-height: 0;
     border: transparent;
+    transition: fill 0.3s;
+}
+
+.dark-theme .header-btn-mobil-menu {
+    background-image: url(./images/align-left-dark.svg);
 }
 
 .header-btn-mobil-menu:hover {
@@ -211,7 +207,6 @@ nav li {
 
 .switch {
     position: relative;
-    display: inline-block;
     width: 40px;
     height: 20px;
 }
@@ -289,7 +284,7 @@ input:checked+.slider:before {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #111111;
+    stroke: #111111;
     margin: 6px 0;
 }
 
@@ -306,14 +301,27 @@ body.dark-theme {
 
 @media screen and (min-width: 768px) {
     .header {
-        width: 100%;
+        padding: 0;
+    }
+    
+    .header-content {
+        display: flex;
+    }
+
+    .logo {
+        align-items: center;
     }
 
     .header-list {
         display: flex;
-        gap: 24px;
         margin-left: 40px;
         align-items: center;
+    }
+
+    .shoping-list::after {
+        
+        content: url(./images/cart-black.svg);
+        
     }
 
     .header-btn-mobil-menu {
@@ -324,4 +332,18 @@ body.dark-theme {
         color: #111111;
     }
 
+    .dark-theme .shoping-list::after {
+        content: url(./images/cart.svg);
+    }
+
+    .dark-theme .menu-list-nav {
+        color: #FFFFFF;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .header-list {
+        margin-left: 76px;
+    }
 }
