@@ -146,7 +146,7 @@ nav li {
 }
 
 .svg-books{
-    content: url(./images/Group-6.svg);
+    content: url(./images/group-6.png);
     position: fixed;
     width: 100%;
     height: auto;
@@ -391,6 +391,7 @@ body.dark-theme {
         color: #FFFFFF;
         background-color: #4F2EE8;
         position: relative;
+        cursor: pointer;
     }
 
     .sign-up-btn::after {
